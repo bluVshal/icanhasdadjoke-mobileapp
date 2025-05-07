@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Jokes from "./components/jokes";
 import { store } from "./api/store";
 import { Provider } from "react-redux";
+import Colours from './components/colours';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,7 @@ export default function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Dad Jokes" component={Jokes} />
+          <Stack.Screen name="Colurs" component={Colours} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
